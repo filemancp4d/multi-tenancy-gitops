@@ -6,7 +6,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "270"
   labels:
     gitops.tier.group: ibm-cloudpak
-    #gitops.tier.layer: services
+    gitops.tier.layer: services
     gitops.tier.source: helm
 spec:
   syncPolicy:
@@ -19,6 +19,7 @@ spec:
   project: services
   source:
     chart: ibm-cpd-wos-instance
+    repoURL: "" 
     targetRevision: 0.1.0
     helm:
       parameters:
