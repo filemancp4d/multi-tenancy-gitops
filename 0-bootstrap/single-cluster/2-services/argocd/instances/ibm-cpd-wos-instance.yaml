@@ -19,7 +19,6 @@ spec:
   project: services
   source:
     chart: ibm-cpd-wos-instance
-    repoURL: "" # Populated by kustomize patches in 2-services/kustomization.yaml
     targetRevision: 0.1.0
     helm:
       parameters:
